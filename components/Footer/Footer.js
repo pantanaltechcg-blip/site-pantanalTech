@@ -12,7 +12,7 @@ class Footer extends HTMLElement {
                             soluções digitais desde 2024.
                         </span>
 
-                        <a href="https://www.instagram.com/pantanaltech/"  id="instagram" target="_blank" class="rodape__link">
+                        <a href="https://www.instagram.com/pantanaltechej/"  id="instagram" target="_blank" class="rodape__link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5"/>
                                 <circle cx="12" cy="12" r="4"/>
