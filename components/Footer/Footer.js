@@ -47,7 +47,7 @@ class Footer extends HTMLElement {
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3.09 5.18 2 2 0 0 1 5.08 3h3a2 2 0 0 1 2 1.72l.38 2.65a2 2 0 0 1-.57 1.74L8.09 10.91a16 16 0 0 0 5 5l1.8-1.8a2 2 0 0 1 1.74-.57l2.65.38A2 2 0 0 1 22 16.92z"/>
                             </svg>
 
-                            <p>(67) 9 9951-9803</p>
+                            <p>(67) 9 9997-8805</p>
                         </div>
                         <div class="contato-item">
                             <svg class="icone" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
