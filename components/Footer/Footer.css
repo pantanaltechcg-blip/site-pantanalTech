@@ -1,0 +1,92 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fundo-escuro);
+    color: #A9B8B0;
+}
+
+.rodape__container{
+    max-width: var(--largura-maxima);
+    padding: 32px 16px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    gap: 50px;
+    border-bottom: 2px solid #142D22;
+    place-items: center;
+}
+
+.rodape__informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-grande);
+    padding: var(--espaco-grande) 0;
+}
+
+.rodape__informacoes img{
+    width: 150px;
+    height: auto;
+    border-radius: var(--raio-pequeno);
+}
+
+.rodape__informacoes #instagram{
+    width: 22px;
+    height: 22px;
+} 
+
+.rodape__titulo{
+    font-size: 20px;
+    color: var(--texto-claro);
+}
+
+.rodape__mapasite{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-grande);
+    padding: var(--espaco-grande) 0;
+    font-size: 14px;
+}
+
+.rodape__mapasite .rodape__links{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-medio);
+    list-style: none;
+}
+
+.rodape__link{
+    text-decoration: none;
+    color: #A9B8B0;
+    transition: color 0.3s ease;
+}
+
+.rodape__link:hover{
+    color: var(--verde-hover);
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-grande);
+    padding: var(--espaco-grande) 0;
+    font-size: 14px;
+}
+
+.rodape__contato .contato-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.rodape__contato .icone {
+    width: 22px;
+    height: 22px;
+    color: var(--verde-principal);
+    flex-shrink: 0;
+}
+
+.rodape__direitos{
+    padding: var(--espaco-grande) 0;
+    font-size: 14px;
+}
