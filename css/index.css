@@ -1,0 +1,75 @@
+/* SEÇÃO 1 */
+
+.slogan{
+    display: flex;
+    padding: 6rem 4rem;
+    gap: 2rem;
+}
+
+.slogan__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.slogan__content h1{
+    font-size: 4.5rem;
+    color: var(--color-primary);
+    font-weight: normal;
+}
+
+.slogan__highlight{
+    color: var(--verde-principal);
+}
+
+.slogan__content p{
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    line-height: 2rem;
+}
+
+.slogan__buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.slogan__buttons a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: var(--raio-medio);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.slogan__buttons a:first-child{
+    background-color: var(--amarelo-destaque);
+    color: var(--texto-principal);
+}
+
+.slogan__buttons a:first-child:hover{
+    background-color: var(--amarelo-hover);
+}
+
+.slogan__buttons a:last-child{
+    background-color: var(--fundo-branco);
+    color: var(--texto-principal);
+    border: 1px solid var(--verde-principal);
+}
+
+.slogan__buttons a:last-child:hover{
+    background-color: var(--verde-claro);
+}
+
+.slogan__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan__img img{
+    width: 100%;
+    max-width: 500px;
+}
