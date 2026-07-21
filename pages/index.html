@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +13,10 @@
 
     <script type="module" src="../components/Header/Header.js"></script>
     <script type="module" src="../components/Footer/Footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Pantanal Tech</title>
 </head>
+
 <body>
     <header-component></header-component>
     <main>
@@ -70,7 +73,97 @@
                 </svg>
             </div>
         </section>
+
+        <section class="servicos">
+            <div class="servicos__container">
+                <span class="servicos__destaque">Nossos Serviços</span>
+                <div class="servicos__content">
+                    <h1 class="servicos__titulo">
+                        Tecnologia simples, útil e bem construída.
+                    </h1>
+                    <p class="servicos__descricao">
+                        Planejamos e desenvolvemos soluções digitais para organizar
+                        processos, melhorar atendimento e criar presença online com
+                        qualidade profissional
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon">
+                        <i data-lucide="monitor" class="icon"></i>
+                        <span class="card__number">01</span>
+                    </div>
+                    <h2 class="card__titulo">Sites e sistemas web</h2>
+                    <p class="card__descricao">
+                        Páginas institucionais, landing pages, plataformas e painéis
+                        administrativos com navegação clara e estrutura escalável.
+                    </p>
+                    <div class="card__tags-container">
+                        <span class="card__tags">Responsivo</span>
+                        <span class="card__tags">Admin</span>
+                        <span class="card__tags">Integrações</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">
+                        <i data-lucide="smartphone" class="icon"></i>
+                        <span class="card__number">02</span>
+                    </div>
+                    <h2 class="card__titulo">Aplicativos mobile</h2>
+                    <p class="card__descricao">
+                        Apps com fluxos objetivos, protótipos navegáveis e interfaces
+                        pensadas para uso real em celular.
+                    </p>
+                    <div class="card__tags-container">
+                        <span class="card__tags">Protótipo</span>
+                        <span class="card__tags">UX/UI</span>
+                        <span class="card__tags">Publicação</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">
+                        <i data-lucide="bot" class="icon"></i>
+                        <span class="card__number">03</span>
+                    </div>
+                    <h2 class="card__titulo">IA e automação</h2>
+                    <p class="card__descricao">
+                        Chatbots, organização de dados e automações para reduzir tarefas
+                        repetitivas e apoiar decisões.
+                    </p>
+                    <div class="card__tags-container">
+                        <span class="card__tags">Chatbots</span>
+                        <span class="card__tags">Dados</span>
+                        <span class="card__tags">Automação</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">
+                        <i data-lucide="trending-up" class="icon"></i>
+                        <span class="card__number">04</span>
+                    </div>
+                    <h2 class="card__titulo">Consultoria tecnológica</h2>
+                    <p class="card__descricao">
+                        Diagnóstico, priorização de funcionalidades e plano técnico para
+                        transformar uma ideia em projeto viável.
+                    </p>
+                    <div class="card__tags-container">
+                        <span class="card__tags">Diagnóstico</span>
+                        <span class="card__tags">Roadmap</span>
+                        <span class="card__tags">Ferramentas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer-component></footer-component>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>
