@@ -42,13 +42,14 @@
   color: var(--texto-secundario);
   margin: 0;
   max-width: 380px;
-  justify-self: end;
+  text-align: justify;
+  padding: 3rem 0 0;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 48px;
   margin-bottom: 72px;
 }
 

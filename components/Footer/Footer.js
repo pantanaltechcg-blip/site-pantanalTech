@@ -4,7 +4,7 @@ class Footer extends HTMLElement {
             <footer class="rodape">
                 <section class="rodape__container">
                     <div class="rodape__informacoes">
-                        <img src="../../assets/logo-pantanaltech.jpeg" alt="Logo">
+                        <img src="../assets/logo-pantanaltech.jpeg" alt="Logo">
 
                         <span class="rodape__texto">
                             Empresa júnior de tecnologia do IFMS
