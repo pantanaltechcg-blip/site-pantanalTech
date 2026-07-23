@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: var(--container);
+  max-width: var(--largura-maxima);
   margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--verde-principal);
   margin-bottom: 14px;
 }
 
@@ -31,7 +31,7 @@
   font-size: clamp(1.9rem, 3vw, 2.6rem);
   font-weight: 800;
   line-height: 1.2;
-  color: var(--ink);
+  color: var(--texto-principal);
   margin: 0;
   letter-spacing: -0.01em;
 }
@@ -39,24 +39,25 @@
 .section-subtitle {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--gray);
+  color: var(--texto-secundario);
   margin: 0;
   max-width: 380px;
-  justify-self: end;
+  text-align: justify;
+  padding: 3rem 0 0;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 48px;
   margin-bottom: 72px;
 }
 
 .portfolio-card {
-  background: var(--white);
-  border-radius: var(--radius-lg);
+  background: var(--fundo-branco);
+  border-radius: var(--raio-grande);
   overflow: hidden;
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--sombra-card);
   display: flex;
   flex-direction: column;
 }
@@ -112,28 +113,28 @@
 }
 
 .badge--outline {
-  background: var(--white);
-  border: 1.5px solid var(--green);
-  color: var(--green);
+  background: var(--fundo-branco);
+  border: 1.5px solid var(--verde-principal);
+  color: var(--verde-principal);
 }
 
 .badge--filled {
-  background: var(--green-tint);
-  color: var(--green-dark);
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
   border: 1.5px solid transparent;
 }
 
 .portfolio-card__title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--texto-principal);
   margin: 0 0 10px;
 }
 
 .portfolio-card__desc {
   font-size: 0.95rem;
   line-height: 1.65;
-  color: var(--gray);
+  color: var(--texto-secundario);
   margin: 0 0 28px;
   flex: 1;
 }
@@ -145,12 +146,12 @@
   width: fit-content;
   font-weight: 600;
   font-size: 0.92rem;
-  color: var(--green);
+  color: var(--link);
   text-decoration: none;
 }
 
 .portfolio-card__link .arrow {
-  transition: transform 0.2s ease;
+  transition: transform var(--transicao-padrao);
 }
 
 .portfolio-card__link:hover .arrow {
@@ -167,9 +168,9 @@
 .quote-box {
   width: 100%;
   height: auto;
-  border-radius: var(--radius-lg); 
+  border-radius: var(--raio-grande); 
   object-fit: contain; 
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--sombra-card);
 }
 
 .about-content {
@@ -182,14 +183,14 @@
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 1.25;
-  color: var(--ink);
+  color: var(--texto-principal);
   margin: 0 0 16px;
 }
 
 .about-desc {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--gray);
+  color: var(--texto-secundario);
   margin: 0 0 26px;
 }
 
@@ -213,7 +214,7 @@
 
 .check-icon {
   flex-shrink: 0;
-  color: var(--green);
+  color: var(--verde-principal);
   margin-top: 3px;
 }
 
@@ -222,26 +223,26 @@
   align-items: center;
   gap: 8px;
   width: fit-content;
-  background: var(--green-dark);
-  color: var(--white);
+  background: var(--botao-primario);
+  color: var(--texto-claro);
   font-family: var(--font-base);
   font-weight: 600;
   font-size: 0.95rem;
   padding: 15px 28px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--raio-pequeno);
   text-decoration: none;
   border: none;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background var(--transicao-padrao), transform var(--transicao-padrao);
 }
 
 .btn-primary:hover {
-  background: var(--green-dark-hover);
+  background: var(--botao-primario-hover);
   transform: translateY(-2px);
 }
 
 .btn-primary:focus-visible,
 .portfolio-card__link:focus-visible {
-  outline: 2px solid var(--green-dark);
+  outline: 2px solid var(--verde-escuro);
   outline-offset: 3px;
 }
 
