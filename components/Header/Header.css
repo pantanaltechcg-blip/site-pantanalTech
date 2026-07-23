@@ -20,14 +20,14 @@
     gap: 1rem;
 }
 
-.menu a{
+.menu-link{
     text-decoration: none;
     color: var(--texto-principal);
     font-weight: 500;
     transition: color 0.3s;
 }
 
-.menu a:hover{
+.menu-link:hover{
     color: var(--link-hover);
 }
 
@@ -37,7 +37,7 @@
     border: none;
     padding: 0.5rem 1rem;
     border-radius: var(--raio-pequeno);
-    cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s;
 }
 

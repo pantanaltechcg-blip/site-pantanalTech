@@ -24,11 +24,11 @@ class Footer extends HTMLElement {
                     <div class="rodape__mapasite">
                         <h3 class="rodape__titulo">Mapa do site</h3>
                         <ul class="rodape__links">
-                            <li><a href="../../index.html" class="rodape__link">Home</a></li>
-                            <li><a href="../../index.html" class="rodape__link">Quem Somos</a></li>
-                            <li><a href="../../index.html" class="rodape__link">Nossos Serviços</a></li>
-                            <li><a href="../../index.html" class="rodape__link">Projetos</a></li>
-                            <li><a href="../../index.html" class="rodape__link">Contato</a></li>
+                            <li><a href="../../pages/index.html" class="rodape__link">Home</a></li>
+                            <li><a href="../../pages/quemsomos.html" class="rodape__link">Quem Somos</a></li>
+                            <li><a href="../../pages/projetos.html" class="rodape__link">Projetos</a></li>
+                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=pantanaltech.cg@ifms.edu.br&su=Quero%20começar%20um%20projeto&body=Olá,%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Pantanal%20Tech.%20Podemos%20agendar%20uma%20reunião?"
+                        target="_blank" rel="noopener noreferrer" class="rodape__link">Contato</a></li>
                         </ul>
                     </div>
 
