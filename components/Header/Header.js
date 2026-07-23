@@ -7,7 +7,6 @@ class Header extends HTMLElement {
                 <nav class="menu">
                     <a href="index.html" class="menu-link">Home</a>
                     <a href="quemsomos.html" class="menu-link">Quem Somos</a>
-                    <a href="#" class="menu-link">Serviços</a>
                     <a href="projetos.html" class="menu-link">Projetos</a>
 
                     <button class="menu-btn">Fale Conosco</button>

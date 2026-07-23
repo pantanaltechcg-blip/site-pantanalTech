@@ -116,6 +116,7 @@
     color: var(--texto-principal);
     line-height: 3rem;
     width: 60%;
+    font-weight: normal;
 }
 
 .servicos__descricao{
@@ -203,58 +204,59 @@
     color: var(--verde-principal);
 }
 
-/* SECAO 2 - PORTFOLIO */
+/* SEÇÃO 2 - PORTFÓLIO */
 
 .portfolio-home{
-    padding: 6rem 2rem;
+    padding: 6rem 0;
     background-color: var(--fundo-pagina);
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .portfolio-home__container{
     width: 100%;
     max-width: var(--largura-maxima);
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .portfolio-home__header{
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    display: flex;
+    gap: 2rem;
     margin-bottom: 4rem;
+}
+
+.portfolio-home__header > div{
+    width: 50%;
 }
 
 .portfolio-home__eyebrow{
     display: inline-block;
-    margin-bottom: 0.875rem;
+    margin-bottom: 1rem;
     color: var(--verde-principal);
     font-size: 1.25rem;
-    letter-spacing: 0;
     text-transform: uppercase;
 }
 
 .portfolio-home__title{
     color: var(--texto-principal);
-    font-size: 2.75rem;
-    line-height: 1.15;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 3rem;
 }
 
 .portfolio-home__subtitle{
+    width: 40%;
     color: var(--texto-secundario);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    max-width: 420px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     text-align: justify;
-    padding: 3rem 0 0;
+    padding-top: 2.5rem;
 }
 
 .portfolio-home__grid{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
     gap: 2rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
 }
 
 .portfolio-home__card{
@@ -262,9 +264,14 @@
     flex-direction: column;
     overflow: hidden;
     background-color: var(--fundo-branco);
-    border: 1px solid var(--borda-padrao);
     border-radius: var(--raio-pequeno);
     box-shadow: var(--sombra-card);
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-home__card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-home__image{
@@ -285,14 +292,14 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 1.75rem;
+    padding: 2rem;
 }
 
 .portfolio-home__badges{
     display: flex;
     flex-wrap: wrap;
     gap: 0.625rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio-home__badge{
@@ -311,23 +318,23 @@
 
 .portfolio-home__badge--filled{
     color: var(--verde-escuro);
-    border: 1px solid var(--verde-claro);
     background-color: var(--verde-claro);
 }
 
 .portfolio-home__card-title{
-    margin-bottom: 0.625rem;
+    margin-bottom: 1rem;
     color: var(--texto-principal);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 .portfolio-home__card-desc{
     flex: 1;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
     color: var(--texto-secundario);
     font-size: 1rem;
-    line-height: 1.65;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 .portfolio-home__link{
@@ -336,7 +343,7 @@
     gap: 0.4rem;
     width: fit-content;
     color: var(--verde-principal);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
     transition: color var(--transicao-padrao);
@@ -348,17 +355,15 @@
 
 .portfolio-home__about{
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 3rem;
     align-items: center;
 }
 
-.portfolio-home__quote{
+.portfolio-home__about > svg{
     display: block;
     width: 100%;
     height: auto;
-    border-radius: var(--raio-pequeno);
-    box-shadow: var(--sombra-card);
 }
 
 .portfolio-home__about-content{
@@ -370,22 +375,23 @@
 .portfolio-home__about-title{
     margin-bottom: 1rem;
     color: var(--texto-principal);
-    font-size: 1.9rem;
-    line-height: 1.25;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
 }
 
 .portfolio-home__about-desc{
-    margin-bottom: 1.625rem;
+    margin-bottom: 1rem;
     color: var(--texto-secundario);
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 .portfolio-home__list{
     display: flex;
     flex-direction: column;
-    gap: 0.875rem;
+    gap: 1rem;
     margin-bottom: 2rem;
     padding: 0;
     list-style: none;
@@ -396,8 +402,8 @@
     align-items: flex-start;
     gap: 0.75rem;
     color: var(--texto-principal);
-    font-size: 0.98rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .portfolio-home__check{
@@ -413,13 +419,13 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    padding: 0.95rem 1.75rem;
+    padding: 1rem 2rem;
     color: var(--texto-claro);
     background-color: var(--verde-principal);
     border-radius: var(--raio-pequeno);
     font-weight: 700;
     text-decoration: none;
-    transition: background-color var(--transicao-padrao), transform var(--transicao-padrao);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .portfolio-home__button:hover{
@@ -431,4 +437,50 @@
 .portfolio-home__link:focus-visible{
     outline: 2px solid var(--verde-principal);
     outline-offset: 3px;
+}
+
+@media (max-width: 820px){
+    .portfolio-home__header,
+    .portfolio-home__about{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-home__title,
+    .portfolio-home__subtitle,
+    .portfolio-home__header > div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px){
+    .portfolio-home{
+        padding: 4rem 0;
+    }
+
+    .portfolio-home__container{
+        padding: 0 1rem;
+    }
+
+    .portfolio-home__header{
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-home__title{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .portfolio-home__subtitle{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .portfolio-home__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-home__body{
+        padding: 1.5rem;
+    }
 }
