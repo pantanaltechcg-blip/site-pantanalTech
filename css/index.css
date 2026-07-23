@@ -6,7 +6,6 @@
     display: flex;
     padding: 6rem 4rem;
     gap: 2rem;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .slogan__content{
@@ -97,7 +96,7 @@
     flex-direction: column;
     padding: 0 2rem;
     gap: 2rem;
-    width: 80%;
+    max-width: var(--largura-maxima);
 }
 
 .servicos__destaque{ 
@@ -230,8 +229,7 @@
     display: inline-block;
     margin-bottom: 0.875rem;
     color: var(--verde-principal);
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: 1.25rem;
     letter-spacing: 0;
     text-transform: uppercase;
 }
@@ -248,7 +246,8 @@
     font-size: 1.1rem;
     line-height: 1.7;
     max-width: 420px;
-    justify-self: end;
+    text-align: justify;
+    padding: 3rem 0 0;
 }
 
 .portfolio-home__grid{
@@ -432,48 +431,4 @@
 .portfolio-home__link:focus-visible{
     outline: 2px solid var(--verde-principal);
     outline-offset: 3px;
-}
-
-@media (max-width: 900px){
-    .portfolio-home{
-        padding: 4rem 1.25rem;
-    }
-
-    .portfolio-home__header,
-    .portfolio-home__grid,
-    .portfolio-home__about{
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-home__header{
-        gap: 1.25rem;
-        margin-bottom: 3rem;
-    }
-
-    .portfolio-home__subtitle{
-        max-width: 100%;
-        justify-self: start;
-    }
-
-    .portfolio-home__grid{
-        margin-bottom: 3.5rem;
-    }
-}
-
-@media (max-width: 560px){
-    .portfolio-home__title{
-        font-size: 2rem;
-    }
-
-    .portfolio-home__body{
-        padding: 1.4rem;
-    }
-
-    .portfolio-home__about-title{
-        font-size: 1.55rem;
-    }
-
-    .portfolio-home__button{
-        width: 100%;
-    }
 }
