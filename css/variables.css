@@ -32,6 +32,9 @@
     --texto-claro: #FFFFFF;
     --texto-destaque: var(--verde-principal);
 
+    --color-primary: var(--texto-principal);
+    --color-secondary: var(--texto-secundario);
+
 
     /* ===========================
        BORDAS
