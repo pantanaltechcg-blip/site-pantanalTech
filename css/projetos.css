@@ -241,3 +241,66 @@
     border-color: var(--texto-claro);
     background: rgba(255, 255, 255, 0.08);
 }
+
+@media (max-width: 768px) {
+    .projetos-container {
+        padding: 0 24px;
+    }
+
+    .projetos-intro {
+        width: 100%;
+    }
+
+    .projetos-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos-container {
+        padding: 0 16px;
+    }
+
+    .projetos-hero {
+        padding: 40px 0;
+    }
+
+    .projetos-hero h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .projetos-intro,
+    .projetos-cta p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .projeto-card__imagem {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .projeto-card__conteudo {
+        padding: 14px 20px 20px;
+    }
+
+    .projeto-convite {
+        min-height: auto;
+        padding: 40px 24px;
+    }
+
+    .projetos-cta h2 {
+        font-size: 1.75rem;
+    }
+
+    .projetos-cta__acoes {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .projetos-cta__acoes .botao {
+        width: 100%;
+    }
+}

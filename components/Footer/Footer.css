@@ -90,3 +90,25 @@
     padding: var(--espaco-grande) 0;
     font-size: 14px;
 }
+
+@media (max-width: 768px){
+    .rodape__container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 1.5rem;
+        place-items: start;
+    }
+
+    .rodape__informacoes,
+    .rodape__mapasite,
+    .rodape__contato{
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .rodape__direitos{
+        padding: 1.5rem;
+        text-align: center;
+    }
+}

@@ -9,3 +9,14 @@ body{
     background-color: var(--fundo-pagina);
     color: var(--texto-principal);
 }
+
+img,
+svg{
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+}
