@@ -1,0 +1,95 @@
+:root {
+
+    /* ===========================
+       CORES PRINCIPAIS
+    =========================== */
+
+    --verde-principal: #1D5E35;
+    --verde-escuro: #072C17;
+    --verde-claro: #EAF7F0;
+    --verde-hover: #164B2A;
+
+    --amarelo-destaque: #F3B21A;
+    --amarelo-hover: #D99C13;
+
+
+    /* ===========================
+       FUNDOS
+    =========================== */
+
+    --fundo-branco: #FFFFFF;
+    --fundo-pagina: #F7F8FC;
+    --fundo-secao: #F2F4F7;
+    --fundo-escuro: var(--verde-escuro);
+
+
+    /* ===========================
+       TEXTOS
+    =========================== */
+
+    --texto-principal: #2E3442;
+    --texto-secundario: #667085;
+    --texto-claro: #FFFFFF;
+    --texto-destaque: var(--verde-principal);
+
+    --color-primary: var(--texto-principal);
+    --color-secondary: var(--texto-secundario);
+
+
+    /* ===========================
+       BORDAS
+    =========================== */
+
+    --borda-padrao: #E7EAF0;
+    --borda-clara: #F2F4F7;
+
+
+    /* ===========================
+       BOTÕES E LINKS
+    =========================== */
+
+    --botao-primario: var(--verde-principal);
+    --botao-primario-hover: var(--verde-hover);
+
+    --botao-destaque: var(--amarelo-destaque);
+    --botao-destaque-hover: var(--amarelo-hover);
+
+    --link: var(--verde-principal);
+    --link-hover: var(--verde-hover);
+
+
+    /* ===========================
+       ESPAÇAMENTOS
+    =========================== */
+
+    --espaco-pequeno: 8px;
+    --espaco-medio: 16px;
+    --espaco-grande: 32px;
+    --espaco-secao: 80px;
+
+
+    /* ===========================
+       BORDAS E SOMBRAS
+    =========================== */
+
+    --raio-pequeno: 6px;
+    --raio-medio: 12px;
+    --raio-grande: 20px;
+
+    --sombra-card: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+
+    /* ===========================
+       TRANSIÇÃO
+    =========================== */
+
+    --transicao-padrao: 0.2s ease;
+
+
+    /* ===========================
+       LAYOUT
+    =========================== */
+
+    --largura-maxima: 1200px;
+    --altura-header: 72px;
+}

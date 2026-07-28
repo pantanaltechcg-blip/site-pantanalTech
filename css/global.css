@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+}
+
+img,
+svg{
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+}

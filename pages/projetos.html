@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projetos.css">
+    <link rel="stylesheet" href="../components/Header/Header.css">
+    <link rel="stylesheet" href="../components/Footer/Footer.css">
+
+    <script type="module" src="../components/Header/Header.js"></script>
+    <script type="module" src="../components/Footer/Footer.js"></script>
+    <title>Projetos</title>
+</head>
+<body>
+    <header-component></header-component>
+    <main class="projetos-page">
+        <section class="projetos-hero" aria-labelledby="titulo-projetos">
+            <div class="projetos-container">
+                <p class="projetos-label">Portfólio</p>
+                <h1 id="titulo-projetos">Projetos que geram impacto real</h1>
+                <p class="projetos-intro">
+                    Cada projeto &eacute; uma hist&oacute;ria de colabora&ccedil;&atilde;o entre estudantes, professores e clientes.
+                    Confira o que j&aacute; constru&iacute;mos.
+                </p>
+            </div>
+        </section>
+
+        <section class="projetos-lista" aria-label="Lista de projetos">
+            <div class="projetos-container projetos-grid">
+                <article class="projeto-card">
+                    <img
+                        class="projeto-card__imagem"
+                        src="../assets/MapGuav.png"
+                        alt="Interface ilustrada do projeto MapGuav com mascote e mapa"
+                    >
+
+                    <div class="projeto-card__conteudo">
+                        <div class="projeto-card__tags" aria-label="Categorias do projeto">
+                            <span class="tag tag--verde">Sistema Web</span>
+                            <span class="tag tag--amarelo">Comunidade</span>
+                            <span class="tag tag--azul">Sustentabilidade</span>
+                        </div>
+
+                        <h2>MapGuav</h2>
+                        <p>
+                            Plataforma com mapa interativo que conecta produtores e consumidores de guavira,
+                            fruto s&iacute;mbolo do Cerrado sul-mato-grossense. O projeto fortalece a preserva&ccedil;&atilde;o
+                            ambiental e a economia local, permitindo cadastrar e localizar p&eacute;s de guavira em toda a regi&atilde;o.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <img
+                        class="projeto-card__imagem"
+                        src="../assets/etapa.png"
+                        alt="Interface ilustrada do portal ETAPA com filtros e vagas de estagio"
+                    >
+
+                    <div class="projeto-card__conteudo">
+                        <div class="projeto-card__tags" aria-label="Categorias do projeto">
+                            <span class="tag tag--verde">Sistema Web</span>
+                            <span class="tag tag--amarelo">Est&aacute;gios</span>
+                            <span class="tag tag--azul">IFMS</span>
+                        </div>
+
+                        <h2>ETAPA</h2>
+                        <p>
+                            Portal de divulga&ccedil;&atilde;o de vagas de est&aacute;gio das empresas conveniadas ao IFMS.
+                            Com filtros por curso, bolsa e per&iacute;odo, o ETAPA aproxima estudantes das melhores
+                            oportunidades e simplifica o processo para as empresas parceiras.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="projeto-convite">
+                    <div>
+                        <h2>Seu projeto pode ser o pr&oacute;ximo</h2>
+                        <p>
+                            Tem uma ideia ou um desafio de tecnologia? Vamos construir a solu&ccedil;&atilde;o juntos.
+                        </p>
+                    </div>
+
+                    <a class="botao botao--primario" href="https://mail.google.com/mail/?view=cm&fs=1&to=pantanaltech.cg@ifms.edu.br&su=Quero%20começar%20um%20projeto&body=Olá,%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Pantanal%20Tech.%20Podemos%20agendar%20uma%20reunião?" target="_blank" rel="noopener noreferrer">
+                        Come&ccedil;ar agora
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="projetos-cta" aria-labelledby="titulo-contato-projetos">
+            <div class="projetos-container projetos-cta__conteudo">
+                <h2 id="titulo-contato-projetos">Gostou do que viu? Vamos conversar.</h2>
+                <p>Nossa equipe est&aacute; pronta para atender o seu desafio e propor a melhor solu&ccedil;&atilde;o.</p>
+
+                <div class="projetos-cta__acoes">
+                    <a class="botao botao--destaque" href="https://wa.me/5567999519803" target="_blank" rel="noopener">
+                        Chamar no WhatsApp
+                    </a>
+                    <a class="botao botao--contorno" href="https://mail.google.com/mail/?view=cm&fs=1&to=pantanaltech.cg@ifms.edu.br&su=Quero%20começar%20um%20projeto&body=Olá,%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Pantanal%20Tech.%20Podemos%20agendar%20uma%20reunião?"
+                        target="_blank" rel="noopener noreferrer">
+                        Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>
