@@ -80,9 +80,11 @@
     background: transparent;
     aspect-ratio: 1.72;
     overflow: hidden;
+    border-radius: var(--raio-grande);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.quem-somos__imagem img {
+.quem-somos__imagem svg {
     position: absolute;
     top: -10%;
     left: -3.5%;
