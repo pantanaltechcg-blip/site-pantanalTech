@@ -4,15 +4,20 @@
 
 .slogan{
     display: flex;
-    padding: 6rem 4rem;
-    gap: 2rem;
+    align-items: center;
+    padding: 6rem clamp(1.5rem, 3vw, 4rem);
+    gap: clamp(1rem, 3vw, 3rem);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .slogan__content{
     display: flex;
+    flex: 1 1 55%;
     flex-direction: column;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
+    max-width: 760px;
     padding: 1rem;
     gap: 2rem;
 }
@@ -69,13 +74,19 @@
 
 .slogan__img{
     display: flex;
+    flex: 1 1 45%;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-width: 0;
 }
 
-.slogan__img img{
-    width: 100%;
-    max-width: 500px;
+.slogan__img img,
+.slogan__img svg{
+    display: block;
+    width: clamp(280px, 42vw, 900px);
+    max-width: 100%;
+    height: auto;
 }
 
 /* SERVIÇOS */
@@ -451,6 +462,12 @@
 
     .slogan__img{
         width: 100%;
+        max-width: 700px;
+    }
+
+    .slogan__img img,
+    .slogan__img svg{
+        width: min(100%, 700px);
     }
 
     .servicos__content,
@@ -495,6 +512,11 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+    }
+
+    .slogan__img img,
+    .slogan__img svg{
+        width: min(100%, 420px);
     }
 
     .servicos,

@@ -1,10 +1,16 @@
 class Footer extends HTMLElement {
     connectedCallback() {
+        const isInPages = window.location.pathname.includes("/pages/");
+        const assetBase = isInPages ? "../" : "";
+        const homeHref = isInPages ? "../index.html" : "index.html";
+        const quemSomosHref = isInPages ? "quemsomos.html" : "pages/quemsomos.html";
+        const projetosHref = isInPages ? "projetos.html" : "pages/projetos.html";
+
         this.innerHTML = `
             <footer class="rodape">
                 <section class="rodape__container">
                     <div class="rodape__informacoes">
-                        <img src="../assets/logo-pantanaltech.jpeg" alt="Logo">
+                        <img src="${assetBase}assets/logo-pantanaltech.jpeg" alt="Logo">
 
                         <span class="rodape__texto">
                             Empresa júnior de tecnologia do IFMS
@@ -24,9 +30,9 @@ class Footer extends HTMLElement {
                     <div class="rodape__mapasite">
                         <h3 class="rodape__titulo">Mapa do site</h3>
                         <ul class="rodape__links">
-                            <li><a href="../../pages/index.html" class="rodape__link">Home</a></li>
-                            <li><a href="../../pages/quemsomos.html" class="rodape__link">Quem Somos</a></li>
-                            <li><a href="../../pages/projetos.html" class="rodape__link">Projetos</a></li>
+                            <li><a href="${homeHref}" class="rodape__link">Home</a></li>
+                            <li><a href="${quemSomosHref}" class="rodape__link">Quem Somos</a></li>
+                            <li><a href="${projetosHref}" class="rodape__link">Projetos</a></li>
                             <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=pantanaltech.cg@ifms.edu.br&su=Quero%20começar%20um%20projeto&body=Olá,%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Pantanal%20Tech.%20Podemos%20agendar%20uma%20reunião?"
                         target="_blank" rel="noopener noreferrer" class="rodape__link">Contato</a></li>
                         </ul>
